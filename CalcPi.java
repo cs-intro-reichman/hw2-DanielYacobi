@@ -18,6 +18,6 @@ public class CalcPi {
 			denominator = denominator + 2; //adds 2 to the denominator
 		}
 		System.out.println("pi according to Java: " + Math.PI);
-		System.out.println("pi, approximated: " + 4 * aprx); //aprx is close to pi/4 as bigger the sum increases
+		System.out.println("pi, approximated:    " + 4 * aprx); //aprx is close to pi/4 as bigger the sum increases
 	}
 }
