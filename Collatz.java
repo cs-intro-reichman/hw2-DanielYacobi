@@ -9,15 +9,15 @@ public class Collatz {
 		int numsinrow; //will return the amount of numbers until the hailstone seq. reaches 1
 		int currentnum; //a temporary int who'll save the current value of an item inside the seq.
 
-		while (i <= N) {
+		while (i <= N) { //goes over it N times
 
 			currentnum = i;
 			firstinseq = true;
 			numsinrow = 0;
 
-			while (currentnum != 1 || firstinseq) {
+			while (currentnum != 1 || firstinseq) { //conditions in order to break the loop if the sequence ends
 
-				if (mode.equals("v")) {
+				if (mode.equals("v")) { //prints the sequence if v is the input
 					System.out.print(currentnum + " ");
 					numsinrow ++;
 				}
@@ -32,7 +32,7 @@ public class Collatz {
 			}
 
 
-			if (mode.equals("v")) {
+			if (mode.equals("v")) { //ends the printing of the sequence starting with the current value of i
 				numsinrow ++;
 				System.out.print(currentnum + " (" + numsinrow + ")");
 				System.out.println();
@@ -40,6 +40,6 @@ public class Collatz {
 
 			i ++;
 		}
-		System.out.println("Every one of the first " + N + " hailstone sequences reached 1.");
+		System.out.println("Every one of the first " + N + " hailstone sequences reached 1."); //prints regardless of v/c
 	}
 }
